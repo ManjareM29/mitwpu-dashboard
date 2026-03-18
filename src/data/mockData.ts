@@ -180,7 +180,7 @@ export const getAttendanceDistribution = () => {
 // Teacher remarks
 export const teacherRemarks = [
 { id: 1, teacher: 'Dr. Prashant Lahane', remark: 'Students excelling in practical lab sessions', timestamp: '2 days ago', department: 'CSE Core' },
-{ id: 2, teacher: 'Dr. Anjali Mehta', remark: 'Need to improve attendance in theoretical classes', timestamp: '5 days ago', department: 'CSF' },
+{ id: 2, teacher: 'Dr. Swati Jadhav', remark: 'Need to improve attendance in theoretical classes', timestamp: '5 days ago', department: 'CSF' },
 { id: 3, teacher: 'Dr. Ramesh Kumar', remark: 'Great improvement in project work this semester', timestamp: '1 week ago', department: 'CSE AIDS' },
 { id: 4, teacher: 'DR. Sneha Patel', remark: 'Some students struggling with lab assignments', timestamp: '3 days ago', department: 'CSE CSBS' },
 ];
