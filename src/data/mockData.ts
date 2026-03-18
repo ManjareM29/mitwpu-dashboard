@@ -83,10 +83,12 @@ export const students: Student[] = Array.from({ length: 200 }, (_, i) => {
 export const labs: Lab[] = [
   { id: 'csf-lab-1', name: 'CSF Research Lab', department: 'CSF', totalSystems: 60, dailyUsageHours: 7, status: 'Active', description: 'Advanced AI and ML research facility with GPU workstations' },
   { id: 'csf-lab-2', name: 'Data Science Lab', department: 'CSF', totalSystems: 50, dailyUsageHours: 6, status: 'Active', description: 'Big data analytics and visualization center' },
-  { id: 'csf-lab-3', name: 'Deep Learning Lab', department: 'CSF', totalSystems: 40, dailyUsageHours: 5, status: 'Active', description: 'Neural network training and deployment facility' },
-  { id: 'cse-core-lab-1', name: 'Programming Lab', department: 'CSE Core', totalSystems: 55, dailyUsageHours: 8, status: 'Active', description: 'General purpose programming and development' },
-  { id: 'cse-core-lab-2', name: 'Networks Lab', department: 'CSE Core', totalSystems: 45, dailyUsageHours: 5, status: 'Active', description: 'Computer networking and security lab' },
-  { id: 'cse-core-lab-3', name: 'Database Lab', department: 'CSE Core', totalSystems: 40, dailyUsageHours: 4, status: 'Maintenance', description: 'Database management systems lab' },
+  { id: 'csf-lab-3', name: 'Deep Learning Lab', department: 'CSE Core', totalSystems: 40, dailyUsageHours: 5, status: 'Active', description: 'Neural network training and deployment facility' },
+  { id: 'cse-core-lab-1', name: 'FSDL Lab', department: 'CSE Core', totalSystems: 55, dailyUsageHours: 8, status: 'Active', description: 'Full stack development Learning' },
+  { id: 'cse-core-lab-2', name: 'ML Lab', department: 'CSE Core', totalSystems: 55, dailyUsageHours: 8, status: 'Active', description: 'Machine Learning learning lab' },
+  { id: 'cse-core-lab-3', name: 'PBL-4 Lab', department: 'CSE Core', totalSystems: 45, dailyUsageHours: 5, status: 'Active', description: 'Project based learning lab' },
+   { id: 'cse-core-lab-3', name: 'ARVR Lab', department: 'CSE Core', totalSystems: 45, dailyUsageHours: 5, status: 'Active', description: 'Augmented Reality and Virtual Reality lab' },
+  { id: 'cse-core-lab-4', name: 'MPJ Lab', department: 'CSE Core', totalSystems: 40, dailyUsageHours: 4, status: 'Maintenance', description: 'Mini Project Using Java' },
   { id: 'cse-aids-lab-1', name: 'AI & DS Lab', department: 'CSE AIDS', totalSystems: 40, dailyUsageHours: 6, status: 'Active', description: 'Artificial Intelligence and Data Science lab' },
   { id: 'cse-aids-lab-2', name: 'ML Research Lab', department: 'CSE AIDS', totalSystems: 35, dailyUsageHours: 4, status: 'Active', description: 'Machine Learning research facility' },
   { id: 'cse-csbs-lab-1', name: 'Cyber Security Lab', department: 'CSE CSBS', totalSystems: 45, dailyUsageHours: 6, status: 'Active', description: 'Cyber security and ethical hacking lab' },
@@ -95,13 +97,21 @@ export const labs: Lab[] = [
 
 // Classrooms
 export const classrooms: Classroom[] = [
-  { id: 'cr-101', name: 'Lecture Hall 101', department: 'CSF', capacity: 120, occupancy: 95, status: 'Occupied' },
-  { id: 'cr-102', name: 'Seminar Room 102', department: 'CSF', capacity: 40, occupancy: 32, status: 'Occupied' },
-  { id: 'cr-201', name: 'Lecture Hall 201', department: 'CSE Core', capacity: 150, occupancy: 0, status: 'Available' },
-  { id: 'cr-202', name: 'Tutorial Room 202', department: 'CSE Core', capacity: 50, occupancy: 45, status: 'Occupied' },
-  { id: 'cr-301', name: 'Lecture Hall 301', department: 'CSE AIDS', capacity: 100, occupancy: 0, status: 'Reserved' },
-  { id: 'cr-302', name: 'Lab Annex 302', department: 'CSE AIDS', capacity: 35, occupancy: 28, status: 'Occupied' },
-  { id: 'cr-401', name: 'Workshop Hall 401', department: 'CSE CSBS', capacity: 80, occupancy: 60, status: 'Occupied' },
+  
+  { id: 'Vyas-201', name: 'Panel-A(DL-1)', department: 'CSE Core', capacity: 59, occupancy: 42, status: 'Occupied' },
+  { id: 'Vyas-202', name: 'Panel-B(DL-2)', department: 'CSE Core', capacity: 59, occupancy: 45, status: 'Occupied' },
+  { id: 'Vyas-203', name: 'Panel-C(DL-3)', department: 'CSE Core', capacity: 59, occupancy: 12, status: 'Occupied' },
+  { id: 'Vyas-204', name: 'Panel-D(DL-4)', department: 'CSE Core', capacity: 59, occupancy: 45, status: 'Available' },
+  { id: 'Vyas-213', name: 'Panel-E(DL-5)', department: 'CSE Core', capacity: 59, occupancy: 38, status: 'Occupied' },
+  { id: 'Vyas-214', name: 'Panel-F(DL-6)', department: 'CSE Core', capacity: 61, occupancy: 51, status: 'Occupied' },
+  { id: 'Vyas-201,204', name: 'Panel-G(CLCC-1)', department: 'CSE Core', capacity: 59, occupancy: 46, status: 'Occupied' },
+  { id: 'Vyas-202', name: 'Panel-H(CLCC-2)', department: 'CSE Core', capacity: 59, occupancy: 32, status: 'Occupied' },
+  { id: 'Vyas-214', name: 'Panel-I(ARVR)', department: 'CSE Core', capacity: 39, occupancy: 0, status: 'Available' },
+  { id: 'Vyas-301', name: 'Lecture Hall 301', department: 'CSE AIDS', capacity: 100, occupancy: 0, status: 'Reserved' },
+  { id: 'Vyas-302', name: 'Lab Annex 302', department: 'CSE AIDS', capacity: 35, occupancy: 28, status: 'Occupied' },
+  { id: 'Vyas-901', name: 'Lecture Hall 101', department: 'CSF', capacity: 120, occupancy: 95, status: 'Occupied' },
+  { id: 'Vyas-802', name: 'Seminar Room 102', department: 'CSF', capacity: 40, occupancy: 32, status: 'Occupied' },
+  { id: 'Vyas-401', name: 'Workshop Hall 401', department: 'CSE CSBS', capacity: 80, occupancy: 60, status: 'Occupied' },
 ];
 
 // Weekly attendance data for charts
@@ -169,9 +179,8 @@ export const getAttendanceDistribution = () => {
 
 // Teacher remarks
 export const teacherRemarks = [
-  { id: 1, teacher: 'Dr. Sarah Johnson', remark: 'Students showing excellent progress in neural network fundamentals', timestamp: '2 hours ago', department: 'CSF' },
-  { id: 2, teacher: 'Prof. Michael Chen', remark: 'Lab equipment requires maintenance attention', timestamp: '4 hours ago', department: 'CSF' },
-  { id: 3, teacher: 'Dr. Emily Davis', remark: 'Outstanding performance in recent ML project submissions', timestamp: '1 day ago', department: 'CSF' },
-  { id: 4, teacher: 'Prof. Robert Wilson', remark: 'Attendance has improved significantly this week', timestamp: '1 day ago', department: 'CSE Core' },
-  { id: 5, teacher: 'Dr. Amanda Lee', remark: 'Students excelling in practical lab sessions', timestamp: '2 days ago', department: 'CSE AIDS' },
+{ id: 1, teacher: 'Dr. Prashant Lahane', remark: 'Students excelling in practical lab sessions', timestamp: '2 days ago', department: 'CSE Core' },
+{ id: 2, teacher: 'Dr. Anjali Mehta', remark: 'Need to improve attendance in theoretical classes', timestamp: '5 days ago', department: 'CSF' },
+{ id: 3, teacher: 'Dr. Ramesh Kumar', remark: 'Great improvement in project work this semester', timestamp: '1 week ago', department: 'CSE AIDS' },
+{ id: 4, teacher: 'DR. Sneha Patel', remark: 'Some students struggling with lab assignments', timestamp: '3 days ago', department: 'CSE CSBS' },
 ];
