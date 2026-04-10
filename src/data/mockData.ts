@@ -1,4 +1,13 @@
 // Mock data for college analytics dashboard
+export interface VyasLab {
+  id: string;
+  roomNo: string;
+  machineMake: string;
+  totalMachines: number;
+  labName: string;
+  technicalAssistant: string;
+  floor: string;
+}
 
 export interface Student {
   id: number;
@@ -110,6 +119,37 @@ export const labs: Lab[] = [
   { id: 'vy-330', name: 'Operating System Lab', department: 'CSE Core', totalSystems: 62, dailyUsageHours: 6, status: 'Active', description: 'OS Lab' },
 ];
 
+export const vyasLabs: VyasLab[] = [
+  { id: '1', roomNo: 'VY 027', machineMake: 'Apple MAC', totalMachines: 62, labName: 'Gen AI Laboratory', technicalAssistant: 'Prajakta Satpute', floor: 'Ground Floor' },
+  { id: '2', roomNo: 'VY 028', machineMake: 'Apple MAC', totalMachines: 62, labName: 'OOPL Laboratory', technicalAssistant: 'Ashwini Munde', floor: 'Ground Floor' },
+  { id: '3', roomNo: 'VY 029', machineMake: 'Apple MAC', totalMachines: 62, labName: 'DSF Laboratory', technicalAssistant: 'Balaji Gutte', floor: 'Ground Floor' },
+  { id: '4', roomNo: 'VY 030', machineMake: 'Apple MAC', totalMachines: 62, labName: 'Metaverse Laboratory', technicalAssistant: 'Adhik Patil', floor: 'Ground Floor' },
+
+  { id: '5', roomNo: 'VY 112', machineMake: 'Old Dell i7', totalMachines: 30, labName: 'Microprocessor Lab', technicalAssistant: 'Madhura Khatale', floor: 'First Floor' },
+  { id: '6', roomNo: 'VY 113', machineMake: 'Old Dell i7', totalMachines: 35, labName: 'Digital Electronics', technicalAssistant: 'Sunita More', floor: 'First Floor' },
+  { id: '7', roomNo: 'VY 123', machineMake: 'Old Dell i7', totalMachines: 30, labName: 'Embedded Systems Lab', technicalAssistant: 'Tukaram Kapse', floor: 'First Floor' },
+
+  { id: '8', roomNo: 'VY 126', machineMake: 'Apple MAC', totalMachines: 62, labName: 'SDL Laboratory', technicalAssistant: 'Dipti Narkhede', floor: 'First Floor' },
+  { id: '9', roomNo: 'VY 127', machineMake: 'Apple MAC', totalMachines: 62, labName: 'Cloud Computing', technicalAssistant: 'Neha Bharti', floor: 'First Floor' },
+  { id: '10', roomNo: 'VY 128', machineMake: 'Dell i7', totalMachines: 62, labName: 'Big Data Lab', technicalAssistant: 'Sonal Gadve', floor: 'First Floor' },
+  { id: '11', roomNo: 'VY 129', machineMake: 'Apple MAC', totalMachines: 62, labName: 'System Software', technicalAssistant: 'Jitendra Sathe', floor: 'First Floor' },
+
+  { id: '12', roomNo: 'VY 206', machineMake: 'Dell i7', totalMachines: 32, labName: 'AI/ML Lab', technicalAssistant: 'Sujit Hande', floor: 'Second Floor' },
+  { id: '13', roomNo: 'VY 212', machineMake: 'Dell i7', totalMachines: 32, labName: 'ARVR Laboratory', technicalAssistant: 'Sujit Hande', floor: 'Second Floor' },
+  { id: '14', roomNo: 'VY 222', machineMake: 'Dell i7', totalMachines: 30, labName: 'Robotics Automation', technicalAssistant: 'Diya Gupta', floor: 'Second Floor' },
+
+  { id: '15', roomNo: 'VY 225', machineMake: 'Dell i5', totalMachines: 62, labName: 'Web Technology', technicalAssistant: 'Smita Sonkule', floor: 'Second Floor' },
+  { id: '16', roomNo: 'VY 226', machineMake: 'Dell i5', totalMachines: 62, labName: 'HCI Laboratory', technicalAssistant: 'Balasaheb Tekale', floor: 'Second Floor' },
+  { id: '17', roomNo: 'VY 227', machineMake: 'Dell i5', totalMachines: 62, labName: 'Blockchain Technology', technicalAssistant: 'Santosh Siraskar', floor: 'Second Floor' },
+  { id: '18', roomNo: 'VY 228', machineMake: 'Dell i5', totalMachines: 62, labName: 'Industrial IoT', technicalAssistant: 'Arundhati Patil', floor: 'Second Floor' },
+
+  { id: '19', roomNo: 'VY 314', machineMake: 'Old Dell i5', totalMachines: 34, labName: 'Database Lab', technicalAssistant: 'Supriya Pansare', floor: 'Third Floor' },
+  { id: '20', roomNo: 'VY 324', machineMake: 'Dell i5', totalMachines: 30, labName: 'Deep Learning', technicalAssistant: 'Vitthal Pariskar', floor: 'Third Floor' },
+  { id: '21', roomNo: 'VY 327', machineMake: 'Dell i5', totalMachines: 62, labName: 'Wireless Network Lab', technicalAssistant: 'Shubhangi Gangane', floor: 'Third Floor' },
+  { id: '22', roomNo: 'VY 328', machineMake: 'Dell i5', totalMachines: 62, labName: 'Digital Forensics Lab', technicalAssistant: 'Yogita Panssre', floor: 'Third Floor' },
+  { id: '23', roomNo: 'VY 329', machineMake: 'Dell i5', totalMachines: 62, labName: 'Image Processing', technicalAssistant: 'Dewanand Bilewar', floor: 'Third Floor' },
+  { id: '24', roomNo: 'VY 330', machineMake: 'Dell i5', totalMachines: 62, labName: 'Operating System Lab', technicalAssistant: 'Nilesh Pawar', floor: 'Third Floor' },
+];
 // Classrooms
 export const classrooms: Classroom[] = [
   

@@ -9,6 +9,7 @@ import TeacherRemarks from "@/components/dashboard/TeacherRemarks";
 import { labs, students, getSentimentDistribution } from "@/data/mockData";
 import { Button } from "@/components/ui/button";
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts";
+import { vyasLabs } from "@/data/mockData";
 
 const weeklySessionData = [
   { day: 'Mon', sessions: 8 },
@@ -17,7 +18,18 @@ const weeklySessionData = [
   { day: 'Thu', sessions: 6 },
   { day: 'Fri', sessions: 5 },
 ];
-
+<div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+  {vyasLabs.map((lab) => (
+    <div key={lab.id} className="glass-card p-4 rounded-xl">
+      <h3 className="font-bold">{lab.labName}</h3>
+      <p>Room: {lab.roomNo}</p>
+      <p>Machine: {lab.machineMake}</p>
+      <p>Total Systems: {lab.totalMachines}</p>
+      <p>Assistant: {lab.technicalAssistant}</p>
+      <p>Floor: {lab.floor}</p>
+    </div>
+  ))}
+</div>
 const dailyAttendance = [
   { time: '9 AM', students: 32 },
   { time: '10 AM', students: 45 },
