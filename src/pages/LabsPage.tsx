@@ -6,7 +6,7 @@ import LabCard from "@/components/dashboard/LabCard";
 import LabUsageChart from "@/components/dashboard/LabUsageChart";
 import { labs, departments } from "@/data/mockData";
 import { Button } from "@/components/ui/button";
-
+import { labs } from "@/data/mockData";
 const LabsPage = () => {
   const [selectedDept, setSelectedDept] = useState<string | null>(null);
   
@@ -25,24 +25,18 @@ const LabsPage = () => {
         animate={{ opacity: 1, y: 0 }}
         className="mb-8"
       >
-        <div className="flex items-center justify-between">
-          <div>
-            <h1 className="text-3xl font-bold mb-2">Lab Analytics</h1>
-            <p className="text-muted-foreground">
-              Monitor laboratory usage and availability across departments
-            </p>
-          </div>
-          <div className="flex items-center gap-4">
-            <div className="flex items-center gap-2 text-sm">
-              <span className="w-3 h-3 rounded-full bg-sentiment-positive" />
-              <span>{activeLabs} Active</span>
-            </div>
-            <div className="flex items-center gap-2 text-sm">
-              <span className="w-3 h-3 rounded-full bg-sentiment-neutral" />
-              <span>{maintenanceLabs} Maintenance</span>
-            </div>
-          </div>
-        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+  {vyasLabs.map((lab) => (
+    <div key={lab.id} className="glass-card p-4 rounded-xl">
+      <h3 className="font-bold">{lab.labName}</h3>
+      <p>Room: {lab.roomNo}</p>
+      <p>Machine: {lab.machineMake}</p>
+      <p>Total Systems: {lab.totalMachines}</p>
+      <p>Assistant: {lab.technicalAssistant}</p>
+      <p>Floor: {lab.floor}</p>
+    </div>
+  ))}
+</div>
       </motion.div>
 
       {/* Filters */}
