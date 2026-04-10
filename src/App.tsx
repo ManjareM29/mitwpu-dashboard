@@ -22,28 +22,27 @@ const App = () => (
       <Toaster />
       <Sonner />
 
-      {/* 🔥 BACKGROUND WRAPPER */}
       <div
         style={{
           minHeight: "100vh",
           width: "100%",
           position: "relative",
           backgroundImage: "url('/mitwpu.jpeg')",
-          backgroundSize: "cover",          // keeps it full screen
+          backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat"
         }}
       >
-        {/* 🔥 DARK OVERLAY FOR CLARITY */}
+        {/* Overlay */}
         <div
           style={{
             position: "absolute",
             inset: 0,
-            backgroundColor: "rgba(0, 0, 0, 0.5)" // adjust 0.4–0.6 if needed
+            backgroundColor: "rgba(0, 0, 0, 0.5)"
           }}
         />
 
-        {/* 🔥 MAIN CONTENT */}
+        {/* Main */}
         <div style={{ position: "relative", zIndex: 1 }}>
           <BrowserRouter>
             <Routes>
@@ -51,7 +50,7 @@ const App = () => (
               <Route path="/departments" element={<DepartmentsPage />} />
               <Route path="/department/:deptId" element={<DepartmentPage />} />
               <Route path="/labs" element={<LabsPage />} />
-              <Route path="/lab/:labId" element={<LabPage />} />
+              <Route path="/lab/:labId" element={<LabPage />} /> {/* ✅ OLD WORKING */}
               <Route path="/classrooms" element={<ClassroomsPage />} />
               <Route path="/performance" element={<PerformancePage />} />
               <Route path="/feedback" element={<FeedbackPage />} />
