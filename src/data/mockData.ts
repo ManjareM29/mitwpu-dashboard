@@ -81,18 +81,33 @@ export const students: Student[] = Array.from({ length: 200 }, (_, i) => {
 
 // Labs
 export const labs: Lab[] = [
-  { id: 'csf-lab-1', name: 'CSF Research Lab', department: 'CSF', totalSystems: 60, dailyUsageHours: 7, status: 'Active', description: 'Advanced AI and ML research facility with GPU workstations' },
-  { id: 'csf-lab-2', name: 'Data Science Lab', department: 'CSF', totalSystems: 50, dailyUsageHours: 6, status: 'Active', description: 'Big data analytics and visualization center' },
-  { id: 'csf-lab-3', name: 'Deep Learning Lab', department: 'CSE Core', totalSystems: 40, dailyUsageHours: 5, status: 'Active', description: 'Neural network training and deployment facility' },
-  { id: 'cse-core-lab-1', name: 'FSDL Lab', department: 'CSE Core', totalSystems: 55, dailyUsageHours: 8, status: 'Active', description: 'Full stack development Learning' },
-  { id: 'cse-core-lab-2', name: 'ML Lab', department: 'CSE Core', totalSystems: 55, dailyUsageHours: 8, status: 'Active', description: 'Machine Learning learning lab' },
-  { id: 'cse-core-lab-3', name: 'PBL-4 Lab', department: 'CSE Core', totalSystems: 45, dailyUsageHours: 5, status: 'Active', description: 'Project based learning lab' },
-   { id: 'cse-core-lab-3', name: 'ARVR Lab', department: 'CSE Core', totalSystems: 45, dailyUsageHours: 5, status: 'Active', description: 'Augmented Reality and Virtual Reality lab' },
-  { id: 'cse-core-lab-4', name: 'MPJ Lab', department: 'CSE Core', totalSystems: 40, dailyUsageHours: 4, status: 'Maintenance', description: 'Mini Project Using Java' },
-  { id: 'cse-aids-lab-1', name: 'AI & DS Lab', department: 'CSE AIDS', totalSystems: 40, dailyUsageHours: 6, status: 'Active', description: 'Artificial Intelligence and Data Science lab' },
-  { id: 'cse-aids-lab-2', name: 'ML Research Lab', department: 'CSE AIDS', totalSystems: 35, dailyUsageHours: 4, status: 'Active', description: 'Machine Learning research facility' },
-  { id: 'cse-csbs-lab-1', name: 'Cyber Security Lab', department: 'CSE CSBS', totalSystems: 45, dailyUsageHours: 6, status: 'Active', description: 'Cyber security and ethical hacking lab' },
-  { id: 'cse-csbs-lab-2', name: 'Business Systems Lab', department: 'CSE CSBS', totalSystems: 30, dailyUsageHours: 3, status: 'Maintenance', description: 'Business analytics and systems lab' },
+  { id: 'vy-027', name: 'Gen AI Laboratory', department: 'CSE Core', totalSystems: 62, dailyUsageHours: 7, status: 'Active', description: 'Apple MAC Gen AI Lab' },
+  { id: 'vy-028', name: 'OOPL Laboratory', department: 'CSE Core', totalSystems: 62, dailyUsageHours: 6, status: 'Active', description: 'Object Oriented Programming Lab' },
+  { id: 'vy-029', name: 'DSF Laboratory', department: 'CSE Core', totalSystems: 62, dailyUsageHours: 6, status: 'Active', description: 'Data Structures Foundation Lab' },
+  { id: 'vy-030', name: 'Metaverse Laboratory', department: 'CSE Core', totalSystems: 62, dailyUsageHours: 5, status: 'Active', description: 'Metaverse Lab' },
+
+  { id: 'vy-112', name: 'Microprocessor Lab', department: 'CSE Core', totalSystems: 30, dailyUsageHours: 5, status: 'Active', description: 'Microprocessor Lab' },
+  { id: 'vy-113', name: 'Digital Electronics Lab', department: 'CSE Core', totalSystems: 35, dailyUsageHours: 5, status: 'Active', description: 'Digital Electronics Lab' },
+  { id: 'vy-123', name: 'Embedded Systems Lab', department: 'CSE Core', totalSystems: 30, dailyUsageHours: 5, status: 'Active', description: 'Embedded Systems Lab' },
+  { id: 'vy-126', name: 'SDL Laboratory', department: 'CSE Core', totalSystems: 62, dailyUsageHours: 6, status: 'Active', description: 'Software Development Lab' },
+  { id: 'vy-127', name: 'Cloud Computing Lab', department: 'CSE Core', totalSystems: 62, dailyUsageHours: 6, status: 'Active', description: 'Cloud Lab' },
+  { id: 'vy-128', name: 'Big Data Lab', department: 'CSE Core', totalSystems: 62, dailyUsageHours: 6, status: 'Active', description: 'Big Data Lab' },
+  { id: 'vy-129', name: 'System Software Lab', department: 'CSE Core', totalSystems: 62, dailyUsageHours: 6, status: 'Active', description: 'System Software Lab' },
+
+  { id: 'vy-206', name: 'AI/ML Lab', department: 'CSE AIDS', totalSystems: 32, dailyUsageHours: 6, status: 'Active', description: 'AI ML Lab' },
+  { id: 'vy-212', name: 'ARVR Lab', department: 'CSE Core', totalSystems: 32, dailyUsageHours: 5, status: 'Active', description: 'AR VR Lab' },
+  { id: 'vy-222', name: 'Robotics Automation Lab', department: 'CSE Core', totalSystems: 30, dailyUsageHours: 5, status: 'Active', description: 'Robotics Lab' },
+  { id: 'vy-225', name: 'Web Technology Lab', department: 'CSE Core', totalSystems: 62, dailyUsageHours: 6, status: 'Active', description: 'Web Tech Lab' },
+  { id: 'vy-226', name: 'HCI Laboratory', department: 'CSE Core', totalSystems: 62, dailyUsageHours: 6, status: 'Active', description: 'Human Computer Interaction Lab' },
+  { id: 'vy-227', name: 'Blockchain Lab', department: 'CSE Core', totalSystems: 62, dailyUsageHours: 6, status: 'Active', description: 'Blockchain Lab' },
+  { id: 'vy-228', name: 'Industrial IoT Lab', department: 'CSE Core', totalSystems: 62, dailyUsageHours: 6, status: 'Active', description: 'IoT Lab' },
+
+  { id: 'vy-314', name: 'Database Lab', department: 'CSE Core', totalSystems: 34, dailyUsageHours: 5, status: 'Active', description: 'Database Lab' },
+  { id: 'vy-324', name: 'Deep Learning Lab', department: 'CSE Core', totalSystems: 30, dailyUsageHours: 5, status: 'Active', description: 'Deep Learning Lab' },
+  { id: 'vy-327', name: 'Wireless Network Lab', department: 'CSE Core', totalSystems: 62, dailyUsageHours: 6, status: 'Active', description: 'Wireless Lab' },
+  { id: 'vy-328', name: 'Digital Forensics Lab', department: 'CSE CSBS', totalSystems: 62, dailyUsageHours: 6, status: 'Active', description: 'Forensics Lab' },
+  { id: 'vy-329', name: 'Image Processing Lab', department: 'CSE Core', totalSystems: 62, dailyUsageHours: 6, status: 'Active', description: 'Image Processing Lab' },
+  { id: 'vy-330', name: 'Operating System Lab', department: 'CSE Core', totalSystems: 62, dailyUsageHours: 6, status: 'Active', description: 'OS Lab' },
 ];
 
 // Classrooms
